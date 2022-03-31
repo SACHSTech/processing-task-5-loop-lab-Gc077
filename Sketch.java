@@ -199,9 +199,11 @@ public class Sketch extends PApplet {
   public void draw_section7(){
     int intX = 0;
     int intY = 0;
+    int intRow = 0;
 
-    for(int intRow = 0; intRow < 300; intRow += 10){
-      for(int intColumn = 290; intColumn >= intRow; intColumn -= 10){
+
+    for(int intColumn = 0; intColumn < 300; intRow += 10){
+      for(intRow = 0; intRow >= intColumn; intColumn += 10){
         intX = 600 + 3 + intRow;  
         intY = 3 + intColumn; 
 
