@@ -201,11 +201,11 @@ public class Sketch extends PApplet {
     int intY = 0;
 
     for(int intRow = 0; intRow < 300; intRow += 10){
-      for(int intColumn = 0; intColumn >= intRow; intColumn += 10){
+      for(int intColumn = 290; intColumn >= intRow; intColumn -= 10){
         intX = 600 + 3 + intRow;  
         intY = 3 + intColumn; 
 
-        // Draw squares
+        // Draw squares 
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
