@@ -79,6 +79,7 @@ public class Sketch extends PApplet {
         intX = 3 + intRow;  //Instead of zero, calculate the proper intX location using 'intRow'
         intY = 300 + 3 + intColumn; //Instead of zero, calculate the proper intY location using 'intColumn'
 
+       // Draw Squares 
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
@@ -107,6 +108,8 @@ public class Sketch extends PApplet {
         else{
           fill(0);
         }
+        
+        // Draw Squares 
         noStroke();
         rect(intX, intY, 5, 5);
 
@@ -134,6 +137,8 @@ public class Sketch extends PApplet {
         else{
           fill(255);
         }
+        
+        // Draw Squares 
         noStroke();
         rect(intX, intY, 5, 5);
 
@@ -145,8 +150,26 @@ public class Sketch extends PApplet {
    * Use the modulus operator and just one 'if' statement to select the color.
    */
   public void draw_section4(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intRow = 0; intRow < 300; intRow += 10){
+      for(int intColumn = 0; intColumn < 300; intColumn += 10){
+        intX = 900 + 3 + intRow;
+        intY = 300 + 3 + intColumn; 
+        fill(255);
+        if((intColumn / 10) % 2 == 0 || (intRow / 10) % 2 != 0){
+          fill(0);
+        }
+        
+        // Draw Squares 
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
+
 
   /**
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
@@ -164,6 +187,7 @@ public class Sketch extends PApplet {
         intX = 300 + 3 + intRow;  
         intY = 3 + intColumn; 
 
+        // Draw squares 
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
@@ -173,7 +197,21 @@ public class Sketch extends PApplet {
   }
 
   public void draw_section7(){
+    int intX = 0;
+    int intY = 0;
 
+    for(int intRow = 0; intRow < 300; intRow += 10){
+      for(int intColumn = 0; intColumn >= intRow; intColumn += 10){
+        intX = 600 + 3 + intRow;  
+        intY = 3 + intColumn; 
+
+        // Draw squares
+        fill(255);
+        noStroke();
+        rect(intX, intY, 5, 5);
+
+      }
+    }
   }
   
   public void draw_section8(){
@@ -182,9 +220,10 @@ public class Sketch extends PApplet {
 
     for(int intRow = 0; intRow < 300; intRow += 10){
       for(int intColumn = 0; intColumn <= intRow; intColumn += 10){
-        intX = 900 + 3 + intRow;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY = 3 + intColumn; //Instead of zero, calculate the proper intY location using 'intColumn'
+        intX = 900 + 3 + intRow; 
+        intY = 3 + intColumn; 
 
+        // Draw squares
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
