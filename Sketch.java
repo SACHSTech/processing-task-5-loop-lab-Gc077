@@ -201,7 +201,7 @@ public class Sketch extends PApplet {
     int intY = 0;
 
     for(int intColumn = 0; intColumn < 300; intColumn += 10){
-      for(int intRow = 0; intRow >= intColumn; intRow += 10){
+      for(int intRow = 0; intRow <= intColumn; intRow += 10){
         intX = 600 + 3 + intRow;  
         intY = 3 + intColumn; 
 
