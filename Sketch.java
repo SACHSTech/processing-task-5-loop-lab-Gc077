@@ -196,7 +196,6 @@ public class Sketch extends PApplet {
       
       }
     }
-
   }
 
   public void draw_section6(){ // Section with triangle made from squares with hypotenous facing right
@@ -233,7 +232,7 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }
-   } 
+    } 
   }
   
   public void draw_section8(){ // Section with triangle made from squares with the hypotenous facing down-left
